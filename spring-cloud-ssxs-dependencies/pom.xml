@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>spring-cloud-dependencies-parent</artifactId>
         <groupId>org.springframework.cloud</groupId>
-        <version>2.1.6.RELEASE</version>
+        <artifactId>spring-cloud-dependencies-parent</artifactId>
+        <version>2.3.1.RELEASE</version>
         <relativePath/>
     </parent>
 
@@ -30,60 +30,68 @@
         <com.ssxs.sdk.single.ssxs-single.version>2.0.1-SNAPSHOT</com.ssxs.sdk.single.ssxs-single.version>
         <com.ssxs.sdk.qiniu.ssxs-qiniu.version>2.0.1-SNAPSHOT</com.ssxs.sdk.qiniu.ssxs-qiniu.version>
         <com.baidu.fsg.ssxs-uid-generator>2.0.1-SNAPSHOT</com.baidu.fsg.ssxs-uid-generator>
+        <com.ssxs.sdk.youzan.ssxs-youzan.version>2.0.1-SNAPSHOT</com.ssxs.sdk.youzan.ssxs-youzan.version>
 
-        <org.apache.commons.commons-lang3.version>3.9</org.apache.commons.commons-lang3.version>
-        <org.apache.commons.commons-io.version>1.3.2</org.apache.commons.commons-io.version>
-        <org.apache.commons.commons-collections4.version>4.3</org.apache.commons.commons-collections4.version>
+        <org.apache.commons.commons-lang3.version>3.11</org.apache.commons.commons-lang3.version>
+        <!-- io包看如何升级到最新版 2.8.0 -->
+        <commons-io.commons-io.version>1.4</commons-io.commons-io.version>
+        <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
         <commons-fileupload.commons-fileupload.version>1.4</commons-fileupload.commons-fileupload.version>
-        <org.apache.commons.commons-text.version>1.6</org.apache.commons.commons-text.version>
+        <org.apache.commons.commons-text.version>1.9</org.apache.commons.commons-text.version>
         <org.apache.commons.commons-email.version>1.5</org.apache.commons.commons-email.version>
 
         <ma.glasnost.orika.version>1.5.4</ma.glasnost.orika.version>
-        <net.coobird.thumbnailator.version>0.4.8</net.coobird.thumbnailator.version>
-        <io.jsonwebtoken.jjwt.version>0.10.6</io.jsonwebtoken.jjwt.version>
+        <net.coobird.thumbnailator.version>0.4.12</net.coobird.thumbnailator.version>
+        <io.jsonwebtoken.jjwt.version>0.11.2</io.jsonwebtoken.jjwt.version>
 
-        <org.apache.poi.version>4.1.0</org.apache.poi.version>
-        <commons-xerces.xercesImpl-xerces.version>2.12.0</commons-xerces.xercesImpl-xerces.version>
-        <org.bouncycastle.bcprov-jdk15on.version>1.61</org.bouncycastle.bcprov-jdk15on.version>
+        <org.apache.poi.version>4.1.2</org.apache.poi.version>
+        <xerces.xercesImpl.version>2.12.0</xerces.xercesImpl.version>
+        <org.bouncycastle.bcprov-jdk15on.version>1.66</org.bouncycastle.bcprov-jdk15on.version>
 
-        <com.google.guava.version>28.0-jre</com.google.guava.version>
-        <com.google.code.gson.gson.version>2.8.5</com.google.code.gson.gson.version>
+        <com.google.guava.version>29.0-jre</com.google.guava.version>
+        <com.google.code.gson.gson.version>2.8.6</com.google.code.gson.gson.version>
 
         <!-- spring boot -->
-        <com.baomidou.mybatis-plus-boot-starter.version>3.1.2</com.baomidou.mybatis-plus-boot-starter.version>
+        <com.baomidou.mybatis-plus-boot-starter.version>3.4.0</com.baomidou.mybatis-plus-boot-starter.version>
+        <p6spy.version>3.9.1</p6spy.version>
 
         <!-- alibaba lib -->
-        <com.alibaba.fastjson.version>1.2.58</com.alibaba.fastjson.version>
-        <com.alibaba.csp.sentinel.version>1.6.1</com.alibaba.csp.sentinel.version>
-        <org.apache.rocketmq-spring-boot-starter.version>2.0.2</org.apache.rocketmq-spring-boot-starter.version>
-        <com.alipay.sdk.alipay-sdk-java.version>3.7.26.ALL</com.alipay.sdk.alipay-sdk-java.version>
+        <com.alibaba.fastjson.version>1.2.74</com.alibaba.fastjson.version>
+        <com.alibaba.spring-cloud-alibaba-nacos-config.version>2.2.0.RELEASE</com.alibaba.spring-cloud-alibaba-nacos-config.version>
 
-        <de.codecentric.springboot.admin.version>2.1.5</de.codecentric.springboot.admin.version>
+        <!-- jackson lib -->
+        <com.fasterxml.jackson.version>2.11.2</com.fasterxml.jackson.version>
+
+        <!-- lombok lib -->
+        <org.projectlombok.lombok.version>1.18.12</org.projectlombok.lombok.version>
+
+        <de.codecentric.springboot.admin.version>2.3.0</de.codecentric.springboot.admin.version>
         <de.codecentric.springboot.admin.ui-login.version>1.5.7</de.codecentric.springboot.admin.ui-login.version>
 
-        <!-- 新版jdbc需要带上时区 8.0.15 url?serverTimezone=UTC& -->
-        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+        <!-- 新版jdbc需要带上时区 8.0.21 url?serverTimezone=UTC& -->
+        <mysql-connector-java.version>5.1.49</mysql-connector-java.version>
 
-        <com.thoughtworks.xstream.xstream.version>1.4.11.1</com.thoughtworks.xstream.xstream.version>
-        <org.dom4j.dom4j.version>2.1.1</org.dom4j.dom4j.version>
-        <com.rometools.rome.version>1.12.0</com.rometools.rome.version>
+        <com.thoughtworks.xstream.xstream.version>1.4.13</com.thoughtworks.xstream.xstream.version>
+        <org.dom4j.dom4j.version>2.1.3</org.dom4j.dom4j.version>
+        <com.rometools.rome.version>1.15.0</com.rometools.rome.version>
 
-        <junit.version>4.12</junit.version>
-        <org.slf4j.version>1.7.26</org.slf4j.version>
+        <junit.version>4.13</junit.version>
+        <org.slf4j.version>1.7.30</org.slf4j.version>
         <ch.qos.logback.version>1.2.3</ch.qos.logback.version>
 
-        <com.google.zxing.version>3.3.3</com.google.zxing.version>
-        <com.github.abel533.ECharts.version>3.0.0.6</com.github.abel533.ECharts.version>
-        <com.squareup.okhttp3.okhttp.version>3.12.2</com.squareup.okhttp3.okhttp.version>
-        <com.qiniu.qiniu-java-sdk.version>7.2.18</com.qiniu.qiniu-java-sdk.version>
-        <com.github.stuxuhai.jpinyin.version>1.1.8</com.github.stuxuhai.jpinyin.version>
-        <cglib.cglib.version>3.2.10</cglib.cglib.version>
+        <com.google.zxing.version>3.4.0</com.google.zxing.version>
 
-        <!--<tomcat.version>9.0.21</tomcat.version>-->
+        <!-- 4.2.2 哪里来的？-->
+        <com.squareup.okhttp3.okhttp.version>3.14.9</com.squareup.okhttp3.okhttp.version>
+        <com.github.stuxuhai.jpinyin.version>1.1.8</com.github.stuxuhai.jpinyin.version>
+        <cglib.cglib.version>3.3.0</cglib.cglib.version>
+
+        <!--<tomcat.version>9.0.34</tomcat.version>-->
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <cn.edu.hfut.dmic.webcollector.version>2.73-alpha</cn.edu.hfut.dmic.webcollector.version>
 
-        <org.apache.flink.version>1.8.1</org.apache.flink.version>
+        <org.apache.flink.version>1.11.2</org.apache.flink.version>
+        <org.jsoup.version>1.13.1</org.jsoup.version>
 
         <!-- Build args -->
         <!-- <argline>-server -Xms512m -Xmx1024m -XX:PermSize=128m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8
@@ -134,11 +142,6 @@
                 <version>${com.ssxs.sdk.alipay.ssxs-sdk-alipay.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alipay.sdk</groupId>
-                <artifactId>alipay-sdk-java</artifactId>
-                <version>${com.alipay.sdk.alipay-sdk-java.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.ssxs.sdk.single</groupId>
                 <artifactId>ssxs-sdk-single</artifactId>
                 <version>${com.ssxs.sdk.single.ssxs-single.version}</version>
@@ -147,6 +150,11 @@
                 <groupId>com.ssxs.sdk.qiniu</groupId>
                 <artifactId>ssxs-sdk-qiniu</artifactId>
                 <version>${com.ssxs.sdk.qiniu.ssxs-qiniu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssxs.sdk.youzan</groupId>
+                <artifactId>ssxs-sdk-youzan</artifactId>
+                <version>${com.ssxs.sdk.youzan.ssxs-youzan.version}</version>
             </dependency>
 
             <dependency>
@@ -189,9 +197,9 @@
                 <version>${org.apache.commons.commons-collections4.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.commons</groupId>
+                <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>${org.apache.commons.commons-io.version}</version>
+                <version>${commons-io.commons-io.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-fileupload</groupId>
@@ -247,13 +255,6 @@
                 <scope>runtime</scope>
             </dependency>
 
-            <!-- baidu ecchar -->
-            <dependency>
-                <groupId>com.github.abel533</groupId>
-                <artifactId>ECharts</artifactId>
-                <version>${com.github.abel533.ECharts.version}</version>
-            </dependency>
-
             <!-- xml lib -->
             <dependency>
                 <groupId>org.dom4j</groupId>
@@ -279,20 +280,38 @@
                 <version>${com.alibaba.fastjson.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.rocketmq</groupId>
-                <artifactId>rocketmq-spring-boot-starter</artifactId>
-                <version>${org.apache.rocketmq-spring-boot-starter.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>io.netty</groupId>
-                        <artifactId>netty-tcnative</artifactId>
-                    </exclusion>
-                </exclusions>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+                <version>${com.alibaba.spring-cloud-alibaba-nacos-config.version}</version>
+            </dependency>
+
+            <!-- jackson lib -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${com.fasterxml.jackson.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.csp</groupId>
-                <artifactId>sentinel-transport-simple-http</artifactId>
-                <version>${com.alibaba.csp.sentinel.version}</version>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${com.fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${com.fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${com.fasterxml.jackson.version}</version>
+            </dependency>
+
+            <!-- lombok lib -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org.projectlombok.lombok.version}</version>
             </dependency>
 
             <!-- spring boot admin lib -->
@@ -340,6 +359,11 @@
                 <artifactId>orika-core</artifactId>
                 <version>${ma.glasnost.orika.version}</version>
             </dependency>
+            <dependency>
+                <groupId>net.coobird</groupId>
+                <artifactId>thumbnailator</artifactId>
+                <version>${net.coobird.thumbnailator.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.bouncycastle</groupId>
@@ -347,12 +371,6 @@
                 <version>${org.bouncycastle.bcprov-jdk15on.version}</version>
             </dependency>
 
-            <!-- qiniu sdk -->
-            <dependency>
-                <groupId>com.qiniu</groupId>
-                <artifactId>qiniu-java-sdk</artifactId>
-                <version>${com.qiniu.qiniu-java-sdk.version}</version>
-            </dependency>
             <!-- okhttp3 -->
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
@@ -421,15 +439,11 @@
                 <artifactId>mybatis-plus-annotation</artifactId>
                 <version>${com.baomidou.mybatis-plus-boot-starter.version}</version>
             </dependency>
+            <!-- 打印sql -->
             <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-generator</artifactId>
-                <version>${com.baomidou.mybatis-plus-boot-starter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-extension</artifactId>
-                <version>${com.baomidou.mybatis-plus-boot-starter.version}</version>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>${p6spy.version}</version>
             </dependency>
 
             <!-- test lib -->
@@ -439,27 +453,6 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-
-            <!--<dependency>
-                <groupId>org.apache.tomcat.embed</groupId>
-                <artifactId>tomcat-embed-core</artifactId>
-                <version>${tomcat.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>1.3.2</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.xml.bind</groupId>
-                <artifactId>jaxb-api</artifactId>
-                <version>2.4.0-b180830.0359</version>
-            </dependency>
-            <dependency>
-                <groupId>org.glassfish.jaxb</groupId>
-                <artifactId>jaxb-runtime</artifactId>
-                <version>2.4.0-b180830.0438</version>
-            </dependency>-->
 
             <!-- servlet lib -->
             <dependency>
@@ -481,56 +474,22 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.flink</groupId>
-                <artifactId>flink-streaming-java_2.11</artifactId>
+                <artifactId>flink-streaming-java_2.12</artifactId>
                 <version>${org.apache.flink.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.flink</groupId>
-                <artifactId>flink-clients_2.11</artifactId>
+                <artifactId>flink-clients_2.12</artifactId>
                 <version>${org.apache.flink.version}</version>
             </dependency>
 
+            <dependency>
+                <!-- jsoup HTML parser library @ https://jsoup.org/ -->
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${org.jsoup.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://nexus.ssxingshou.com/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>maven-snapshots</name>
-            <url>http://nexus.ssxingshou.com/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <!-- 首次使用parentpom的时候，需要在maven的setting里面配置好直接使用二方库 -->
-    <repositories>
-        <!--        <repository>
-                    <id>maven-public</id>
-                    <name>maven-public</name>
-                    <url>http://nexus.ssxingshou.com/repository/maven-public/</url>
-                </repository>-->
-        <repository>
-            <id>maven-central</id>
-            <name>maven-central</name>
-            <url>https://repo1.maven.org/maven2/</url>
-        </repository>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray</name>
-            <url>http://jcenter.bintray.com</url>
-        </repository>
-        <repository>
-            <id>sonatype-oss-snapshots</id>
-            <name>Sonatype OSS Snapshots Repository</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
 
 </project>
