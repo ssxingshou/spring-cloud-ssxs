@@ -71,7 +71,7 @@
         <!-- 新版jdbc需要带上时区 8.0.21 url?serverTimezone=UTC& -->
         <mysql-connector-java.version>5.1.49</mysql-connector-java.version>
 
-        <com.thoughtworks.xstream.xstream.version>1.4.13</com.thoughtworks.xstream.xstream.version>
+        <com.thoughtworks.xstream.xstream.version>1.4.17</com.thoughtworks.xstream.xstream.version>
         <org.dom4j.dom4j.version>2.1.3</org.dom4j.dom4j.version>
         <com.rometools.rome.version>1.15.0</com.rometools.rome.version>
 
